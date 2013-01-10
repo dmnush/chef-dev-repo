@@ -1,0 +1,79 @@
+127.0.0.1               localhost.localdomain localhost
+::1             localhost6.localdomain6 localhost6
+
+#
+#	dev/itl environments for bibo/bimo
+#
+
+#	ring managers for bibo
+
+10.0.152.6	biboring01-pd biboring01.dev.omss.cso.att.com
+10.1.4.14	biboring01-pi biboring01.itl.omss.cso.att.com
+
+#	ring managers for bimo
+
+10.0.152.7		bimoring01-pd bimoring01.dev.omss.cso.att.com
+10.1.4.13		bimoring01-pi bimoring01.itl.omss.cso.att.com
+
+#	ring gold boxes for bibo/bimo
+
+10.0.152.64 	qsvapi01-gd devgold-qsvapi01 qsvapi01.dev.omss.cso.att.com
+10.0.152.63     bimoapi01-gd devgold-bimoapi01 bimoapi01.dev.omss.cso.att.com
+
+#	dev environment
+
+10.0.152.19     dev1ewr-inst01 dev01 dev.dev.omss.cso.att.com hub.dev.omss.cso.att.com
+10.0.152.20     dev1ewr-inst02 dev02 prov.dev.omss.cso.att.com
+10.0.152.9      dev1ewr-inst05 dev05 dev05.dev.omss.cso.att.com
+10.0.152.24     dev1ewr-inst06 dev06 dev06.dev.omss.cso.att.com
+10.0.152.28     dev1ewr-inst08 dev08 logger.dev.omss.cso.att.com alert.dev.omss.cso.att.com joes.dev.omss.cso.att.com    logger  alert joes.dev.astra.sl.attcompute.com
+10.0.152.26     dev1ewr-inst09 dev09 ora01.dev.omss.cso.att.com
+10.0.152.27     dev1ewr-inst10 dev10 build.dev.omss.cso.att.com updates.dev.omss.cso.att.com
+10.0.152.10     dev1ewr-inst11 dev11 dev11.dev.omss.cso.att.com admin.dev.omss.cso.att.com
+10.0.152.11     dev1ewr-inst12 dev12 dev12.dev.omss.cso.att.com
+10.0.152.12     dev1ewr-inst13 dev13 dev13.dev.omss.cso.att.com
+10.0.152.15     dev1ewr-inst14 dev14 dev14.dev.omss.cso.att.com
+10.0.152.13     dev1ewr-inst15 dev15 dev15.dev.omss.cso.att.com
+10.0.152.25     dev1ewr-devprpl-aweb01    dev1ewr-devprpl-aweb01.dev.omss.cso.att.com     aweb01.dev.omss.cso.att.com
+10.0.152.29     dev1ewr-devprpl-dbora01   dev1ewr-devprpl-dbora01.dev.omss.cso.att.com    dbora01.dev.omss.cso.att.com
+10.0.152.30     dev1ewr-devprpl-hubapi01  dev1ewr-devprpl-hubapi01.dev.omss.cso.att.com   hubapi01.dev.omss.cso.att.com
+10.0.152.31     dev1ewr-devprpl-infr01    dev1ewr-devprpl-infr01.dev.omss.cso.att.com     infr01.dev.omss.cso.att.com
+10.0.152.32     dev1ewr-devprpl-prov01    dev1ewr-devprpl-prov01.dev.omss.cso.att.com     prov01.dev.omss.cso.att.com
+10.0.152.33     dev1ewr-devred-cweb01     dev1ewr-devred-cweb01.dev.omss.cso.att.com      cweb01.dev.omss.cso.att.com
+10.0.152.34     dev1ewr-devprpl-infrdev01 dev1ewr-devprpl-infrdev01.dev.omss.cso.att.com  infrdev01.dev.omss.cso.att.com 
+10.0.152.16     dev1ewr-devprpl-riak01    dev1ewr-devprpl-riak01.dev.omss.cso.att.com     riak01.dev.omss.cso.att.com
+10.0.152.14     dev1ewr-devgold-authapi01 dev1ewr-devgold-authapi01.dev.omss.cso.att.com  authapi01.dev.omss.cso.att.com
+10.0.152.37     dev1ewr-devgold-log02     dev1ewr-devgold-log02.dev.omss.cso.att.com      log02.dev.omss.cso.att.com
+10.0.152.38     dev1ewr-devgold-alert02   dev1ewr-devgold-alert02.dev.omss.cso.att.com    alert02.dev.omss.cso.att.co
+10.0.152.39     dev1ewr-devgold-fathapi01 dev1ewr-devgold-fathapi01.dev.omss.cso.att.com  fathapi01.dev.omss.cso.att.com                                  # Fathom-API
+10.0.152.40     dev1ewr-devgold-fathdb01  dev1ewr-devgold-fathdb01.dev.omss.cso.att.com   fathdb01.dev.omss.cso.att.com                                   # Fathom-DB
+10.0.152.41     dev1ewr-devprpl-hubapi02  dev1ewr-devprpl-hubapi02.dev.omss.cso.att.com   hubapi02.dev.omss.cso.att.com                                   # Hub API
+10.0.152.42     dev1ewr-devprpl-hubapi03  dev1ewr-devprpl-hubapi03.dev.omss.cso.att.com   hubapi03.omss.cso.att.com                                       # Hub API
+10.0.152.22     dev1ewr-devprpl-vdoc01    dev1ewr-devprpl-vdoc01.dev.omss.cso.att.com     vdoc01.dev.omss.cso.att.com                                     # Vendor doc
+10.0.152.23     dev1ewr-devprpl-lb01      dev1ewr-devprpl-lb01.dev.omss.cso.att.com       lb01.dev.omss.cso.att.com   hubapi.dev.omss.cso.att.com         # Hub API load balance
+10.0.152.44     dev1ewr-devgold-svtoken   dev1ewr-devgold-svtoken.dev.omss.cso.att.com    svtoken.dev.omss.cso.att.com
+10.0.152.43     dev1ewr-devgold-safedb01  dev1ewr-devgold-safedb01.dev.omss.cso.att.com   safedb01.dev.omss.cso.att.com
+10.0.152.45     dev1ewr-devgold-safejb01  dev1ewr-devgold-safejb01.dev.omss.cso.att.com   safejb01.dev.omss.cso.att.com
+10.0.152.46     dev1ewr-dev-jbuild01      dev1ewr-dev-jbuild01.dev.omss.cso.att.com       jbuild01.dev.omss.cso.att.com
+10.0.152.47     dev1ewr-devgold-swrap01   dev1ewr-devgold-swrap01.dev.omss.cso.att.com    swrap01.dev.omss.cso.att.com
+10.0.152.49     dev1ewr-devgold-openig01  dev1ewr-devgold-openig01.dev.omss.cso.att.com   openig01.dev.omss.cso.att.com
+10.0.152.48     dev1ewr-devgold-safefr01  dev1ewr-devgold-safefr01.dev.omss.cso.att.com   safefr01.dev.omss.cso.att.com
+10.0.152.50 	  dev1ewr-devgold-res01     dev1ewr-devgold-res01.dev.omss.cso.att.com      res01.dev.omss.cso.att.com
+10.0.152.51     dev1ewr-devgold-smail01   dev1ewr-devgold-smail01.dev.omss.cso.att.com    smail01.dev.omss.cso.att.com
+10.0.152.52     dev1ewr-devred-cmail01    dev1ewr-devred-cmail01.dev.omss.cso.att.com     cmail01.dev.omss.cso.att.com
+10.0.152.40     dev1ewr-devgold-med01 	  dev1ewr-devgold-med01.dev.omss.cso.att.com      med01.dev.omss.cso.att.com
+10.0.152.54     dev1ewr-devgold-meddb01   dev1ewr-devgold-meddb01.dev.omss.cso.att.com    meddb01.dev.omss.cso.att.com
+
+### Begin Auth Section  (ds5483)
+# IP            # Hostname               # Individually referenceable  # Service alias 
+10.0.152.18     dev1ewr-devgold-idm01       idm01.dev.omss.cso.att.com    idm.dev.omss.cso.att.com
+10.0.152.56     dev1ewr-devgold-fs-ds01     dev1ewr-devgold-fs-ds0.dev.omss.cso.att.com     fs-ds0.dev.omss.cso.att.com
+10.0.152.57     dev1ewr-devgold-lm-ds01    	dev1ewr-devgold-lm-ds0.dev.omss.cso.att.com     lm-ds0.dev.omss.cso.att.com
+10.0.152.58     dev1ewr-devgold-fs-authZ01  dev1ewr-devgold-fs-authZ01.dev.omss.cso.att.com fs-authZ01.dev..omss.cso.att.com authz.fs.dev.astra.sl.attcompute.com
+10.0.152.59     dev1ewr-devgold-lm-authZ01  dev1ewr-devgold-lm-authZ01.dev.omss.cso.att.com lm-authZ01.dev..omss.cso.att.com authz.lm.dev.astra.sl.attcompute.com
+### End Auth Section
+
+# Common aliases between dev and itl domains
+10.0.152.19	hubapi.omss.att.com
+10.0.152.28	alert.omss.att.com
+10.0.152.74	logger.omss.att.com

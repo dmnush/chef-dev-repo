@@ -1,0 +1,62 @@
+127.0.0.1		localhost.localdomain localhost
+::1		localhost6.localdomain6 localhost6
+
+
+
+10.1.4.3        dev2ewr-inst01  hub.itl.omss.cso.att.com                                                                                            #Hub API
+10.1.4.4        dev2ewr-inst02  prov.itl.omss.cso.att.com                                                                                           #Hub Provisioning
+10.1.4.8        dev2ewr-inst03  oracle.itl.omss.cso.att.com                                                                                         #Hub Oracle DB
+10.1.4.6        dev2ewr-inst04  admin.itl.omss.cso.att.com     logger.itl.omss.cso.att.com    alert.itl.omss.cso.att.com    logger  alert   logger.dev.omss.cso.att.com alert.dev.omss.cso.att.com             #Cust Admin Web Server
+10.1.4.5        dev2ewr-itlprpl-riak01    itlprpl.riak01.itl.omss.cso.att.com                                                                                  #Hub Riak DB               
+10.1.4.7        dev2ewr-itlprpl-vdoc01    dev2ewr-itlprpl-vdoc01.itl.omss.cso.att.com     riak01.itl.omss.cso.att.com
+10.1.4.9        dev2ewr-itlprpl-lb01      dev2ewr-itlprpl-lb01.itl.omss.cso.att.com       lb01.itl.omss.cso.att.com
+10.1.4.10       dev2ewr-itlprpl-hubapi02  dev2ewr-itlprpl-hubapi02.itl.omss.cso.att.com   hubapi02.itl.omss.cso.att.com
+10.1.4.11       dev2ewr-itlprpl-hubapi03  dev2ewr-itlprpl-hubapi03.itl.omss.cso.att.com   hubapi03.itl.omss.cso.att.com
+
+### Begin Auth Section  (ds5483)
+# IP            # Hostname                  # Individually referenceable     # Service alias
+10.1.12.53      dev5ewr-itlgold-fs-authz01  fs-authz01.itl.omss.cso.att.com  fs-authz.itl.omss.cso.att.com authz.fs.itl.astra.sl.attcompute.com
+10.1.12.55      dev5ewr-itlgold-fs-authn01  fs-authn01.itl.omss.cso.att.com  fs-authn.itl.omss.cso.att.com
+10.1.12.50      dev5ewr-itlgold-fs-ds01     fs-ds01.itl.omss.cso.att.com     fs-ds.itl.omss.cso.att.com
+10.1.12.54      dev5ewr-itlgold-lm-authz01  lm-authz01.itl.omss.cso.att.com  lm-authz.itl.omss.cso.att.com authz.lm.itl.astra.sl.attcompute.com
+10.1.12.51      dev5ewr-itlgold-lm-authn01  lm-authn01.itl.omss.cso.att.com  lm-authn.itl.omss.cso.att.com
+10.1.12.52      dev5ewr-itlgold-lm-ds01     lm-ds01.itl.omss.cso.att.com     lm-ds.itl.omss.cso.att.com
+10.1.12.3       dev5ewr-inst01  authz.fs.itl.omss.cso.att.com  # older entry still needed
+10.1.12.4       dev5ewr-inst02  authn.fs.itl.omss.cso.att.com  # older entry still needed
+10.1.12.8       dev5ewr-inst03  ds.fs.itl.omss.cso.att.com     # older entry still needed
+### End Auth Section
+
+10.1.12.5       dev5ewr-itlgold-dbora01 itlgold-dbora01.itl.omss.cso.att.com  dbora01.itl.omss.cso.att.com                                          #Log-Alert DB
+10.1.12.6       dev5ewr-itlgold-log01   itlgold-log01.itl.omss.cso.att.com    log01.itl.omss.cso.att.com                                            #Log
+10.1.12.7       dev5ewr-itlgold-alert01 itlgold-alert01.itl.omss.cso.att.com  alert01.itl.omss.cso.att.com                                          #Alert
+10.1.12.9       dev5ewr-itlgold-fs-swrap01 itlgold-fs-swrap01.itl.omss.cso.att.com fs-swrap01.itl.omss.cso.att.com
+10.1.12.16      dev5ewr-itlgold-lm-swrap01  itlgold-lm-swrap01.itl.omss.cso.att.com lm-swrap01.itl.omss.cso.att.com 
+10.1.12.18      dev5ewr-itlgold-oab-smail01 itlgold-oab-smail01.itl.omss.cso.att.com oab-smail01.itl.omss.cso.att.com
+10.1.12.17      dev5ewr-itlgold-oab-swrap01 itlgold-oab-swrap01.itl.omss.cso.att.com oab-swrap01.itl.omss.cso.att.com
+10.1.12.19 	    dev5ewr-itlgold-log02 itlgold-log02.itl.omss.cso.att.com log02.itl.omss.cso.att.com                                                 # Log-API
+10.1.12.20      dev5ewr-itlgold-alert02 itlgold-alert02.itl.omss.cso.att.com alert02.itl.omss.cso.att.com                                           # Alert-API
+10.1.12.22      dev5ewr-itlgold-fathapi01   itlgold-fathapi01.itl.omss.cso.att.com fathapi01.itl.omss.cso.att.com
+10.1.12.31      dev5ewr-itlgold-fathdb01    itlgold-fathdb01.itl.omss.cso.att.com  fathdb01.itl.omss.cso.att.com
+10.1.12.25      dev5ewr-itlgold-svtoken    dev5ewr-itlgold-svtoken.itl.omss.cso.att.com svtoken.itl.omss.cso.att.com
+10.1.12.26      dev5ewr-itlgold-safedb01   dev5ewr-itlgold-safedb01.itl.omss.cso.att.com safedb01.itl.omss.cso.att.com
+10.1.12.27      dev5ewr-itlgold-safejb01   dev5ewr-itlgold-safejb01.itl.omss.cso.att.com safejb01.itl.omss.cso.att.com
+10.1.12.24      dev5ewr-itlgold-safefr01   dev5ewr-itlgold-safefr01.itl.omss.cso.att.com safefr01.itl.omss.cso.att.com
+10.1.12.28    	dev5ewr-itlgold-res01      dev5ewr-itlgold-res01.itl.omss.cso.att.com   res01.itl.omss.cso.att.com
+10.1.12.29      dev5ewr-itlgold-openig01   dev5ewr-itlgold-openig01.itl.omss.cso.att.com  openig01.itl.omss.cso.att.com
+10.1.12.30      dev5ewr-itlgold-smail01    dev5ewr-itlgold-smail01.itl.omss.cso.att.com  smail01.itl.omss.cso.att.com
+10.1.12.23      dev5ewr-itlgold-med01   	dev5ewr-itlgold-med01.itl.omss.cso.att.com   med01.itl.omss.cso.att.com
+10.1.12.32      dev5ewr-itlgold-meddb01   dev5ewr-itlgold-meddb01.itl.omss.cso.att.com meddb01.itl.omss.cso.att.com
+
+10.0.208.3      dev6ewr-inst01  cust1.itl.omss.cso.att.com joes.itl.astra.sl.attcompute.com
+10.0.208.4      dev6ewr-itlred-boo-cweb01 dev6ewr-itlred-boo-cweb01.itl.omss.cso.att.com itlred-boo-cweb01.itl.omss.cso.att.com                     #Cust BOO Web Server
+10.0.208.6      dev6ewr-inst03 dev6ewr-inst03.itl.omss.cso.att.com 
+10.0.208.5      dev6ewr-itlred-cmail01     dev6ewr-itlred-cmail01.itl.omss.cso.att.com cmail01.itl.omss.cso.att.com
+
+# Common aliases between dev and itl domains
+10.1.4.3        hubapi.omss.att.com
+10.1.4.6        logger.omss.att.com    alert.omss.att.com 
+
+10.0.208.6      intra.itl.omss.cso.att.com intra.itl.astra.sl.attcompute.com
+10.0.208.4      boo.itl.omss.cso.att.com boo.itl.astra.sl.attcompute.com
+
+10.0.152.27     dev1ewr-inst10 dev10 build.dev.omss.cso.att.com updates.dev.omss.cso.att.com
