@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Overview
 ========
 
@@ -64,3 +65,9 @@ Next Steps
 ==========
 
 Read the README file in each of the subdirectories for more information about what goes in those directories.
+=======
+chef-test
+=========
+
+test chef source control and backup
+>>>>>>> 0918ebda74b261cf8d99e278850b9c207d8803e8
