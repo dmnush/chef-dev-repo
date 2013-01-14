@@ -1,0 +1,1 @@
+{"description":"Role for Astra Logger (gold box) VMs","run_list":["role[AstraBase]","recipe[secweb_httpd::secweb_proxy]","recipe[astra_logger::omss_logger]"],"env_run_lists":{},"json_class":"Chef::Role","default_attributes":{},"chef_type":"role","override_attributes":{},"name":"AstraLogger"}

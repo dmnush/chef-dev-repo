@@ -1,0 +1,1 @@
+{"description":"Configuration for Tomcat.","run_list":["role[Java]","recipe[tomcat::default]"],"env_run_lists":{},"json_class":"Chef::Role","default_attributes":{},"chef_type":"role","override_attributes":{},"name":"Tomcat"}

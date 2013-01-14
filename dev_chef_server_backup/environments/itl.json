@@ -1,0 +1,1 @@
+{"description":"Astra Integration Testing Environment","json_class":"Chef::Environment","default_attributes":{"omss_repo_addr":"75.62.61.41"},"cookbook_versions":{},"chef_type":"environment","override_attributes":{},"name":"itl"}

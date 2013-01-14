@@ -1,0 +1,1 @@
+{"override":{},"default":{},"run_list":["recipe[omss_base::omss-repo]"],"normal":{},"automatic":{},"json_class":"Chef::Node","chef_environment":"_default","chef_type":"node","name":"testnode02-jc"}

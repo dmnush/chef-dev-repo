@@ -1,0 +1,1 @@
+{"description":"Astra Development Environment","json_class":"Chef::Environment","default_attributes":{"omss_repo_addr":"10.0.152.27"},"cookbook_versions":{},"chef_type":"environment","override_attributes":{},"name":"dev"}
