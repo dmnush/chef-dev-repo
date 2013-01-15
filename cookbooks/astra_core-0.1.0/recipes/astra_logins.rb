@@ -79,9 +79,12 @@ link "/usr/lib/python2.6/site-packages/sis" do
 end
 
 # What Chris does now...  should be more secure
-script "omss_sudoers" do
-   interpreter  'bash'
-   code         'echo "%omss	ALL=(ALL)	ALL"  >> /etc/sudoers'
+file "/etc/sudoers.d/omss-sudoers" do
+   action :create
+   owner "root"
+   group "root"
+   mode  00440
+   content "%omss	ALL=(ALL)	ALL\n"
 end
 
 # Load groups from the 'astra_groups' data bag
@@ -110,6 +113,16 @@ logins.each do |login|
    home = "/home/#{login}"
 
    curuser = system("grep -qs #{login} /etc/passwd")
+   passwd = nil
+   defaultpasswd = false
+   if ! curuser
+      if data['passwd']
+         passwd = data['passwd']
+      else
+         passwd = '$1$aDr8MGl1$Ia9P3qIx3AhCcjeLx11bW1'
+         defaultpasswd = true
+      end
+   end
 
    if (data['envs'].include? env) || (data['envs'].include? "ALL")
       user login do
@@ -118,6 +131,7 @@ logins.each do |login|
          gid       data['gid']
          shell     data['shell']
          comment   data['comment']
+         password  passwd
          home      home
          supports  :manage_home => true
       end
@@ -132,12 +146,28 @@ logins.each do |login|
          end
       end
 
-      # For new users, set the default password
-      if ! curuser
-         script "default_password" do
+      if (data['key'])
+         directory "#{home}/.ssh" do
+            action :create
+            owner login
+            group data['gid']
+            mode  00700
+         end
+
+         file "#{home}/.ssh/authorized_keys" do
+            action :create
+            owner login
+            group data['gid']
+            mode  00644
+            content data['key']
+         end 
+      end
+
+      # For new users with default password, force change on first login
+      if defaultpasswd
+         script "expire_password" do
             interpreter  "bash"
             code         <<-EOH
-               echo 'ChangeMeRightNow!' | (passwd --stdin #{login})
                chage -d 0  #{login}
             EOH
          end
